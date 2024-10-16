@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire</title>
+</head>
+<body>
+    <main>
+
+        <fieldset>
+        <input type="text" name="prenom" id="prenom" placeholder="Prénom" required>
+        <input type="text" name="nom" id="nom" placeholder="Nom" required><br>
+        <br><label for="age">Âge</label>
+        <input type="number" name="age" id="age" min="0" max="100"><br>
+        <br><input type="text" name="sexe" id="sexe" placeholder="Sexe"><br>
+        <br><input type="email" name="email" id="email" placeholder="Email" pattern="@gmail.com" required><br>
+        <br><input type="text" name="adresse" id="adresse" placeholder="Adresse postale" required>
+            <input type="text" name="codepostal" id="codepostal" placeholder="Code Postal" minlength="5" maxlength="5" required>
+        <br><input type="text" name="ville" id="ville" placeholder="Ville"><br>
+        <br><label for="metier">Métier exercé</label><br>
+        <br><select name="metier" id="metier">
+            <option value="..." selected>...</option>
+            <option value="dev">Ouvrier</option>
+            <option value="dent">Dentiste</option>
+            <option value="pomp">Pompier</option>
+            <option value="Chant">Chanteur</option>
+            <option value="autre">Autre</option>
+            </select><br>
+            <br><input type="text" name="precisez" id="precisez" placeholder="Précisez"><br>
+        <br><label for="nationnalité">Nationnalité</label><br>
+        <br><select name="nationnalité" id="nationnalité">
+            <option value="..." selected>...</option>
+            <option value="France">France</option>
+            <option value="Angleterre">Angleterre</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Allemagne">Allemagne</option>
+            <option value="Italie">Italie</option>
+            <option value="Belgique">Belgique</option>
+        </select><br>
+        <br><label for="Datedenaissance"></label>Date de naissance<br> 
+        <br><input type="date" name="Datdenaissance" id="Datedenaissance"><br>
+        <br><label for="paysdenaissance">Pays de naissance</label><br>
+        <br><select name="paysdenaissance" id="paysdenaissance">
+            <option value="..." selected>...</option>
+            <option value="France">France</option>
+            <option value="Angleterre">Angleterre</option>
+            <option value="Espagne">Espagne</option>
+            <option value="Allemagne">Allemagne</option>
+            <option value="Italie">Italie</option>
+            <option value="Belgique">Belgique</option>
+        </select><br>
+        <br><input type="text" name="numerodesecu" id="numerodesecu" placeholder="Numéro de sécurité social" required minlength="13" maxlength="13"><br>
+        <input type="text" name="passeport" id="passeport" placeholder="Numéro du passeport" required minlength="9" maxlength="9"><br>
+        <br><label for="datededelivrance">Date de délivrance du passeport</label>
+        <input type="date" name="datededelivrance" id="datededelivrance"><br>
+        <br><label for="datedevalidite">Date de validité du passeport</label>
+        <input type="date" name="datedevalidite" id="datedevalidite"><br>
+        <br><input type="submit" value="Valider">
+    </fieldset>
+    </main>
+    
+</body>
+</html>
